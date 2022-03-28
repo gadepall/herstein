@@ -1,0 +1,2 @@
+# herstein
+Solution to exercises
