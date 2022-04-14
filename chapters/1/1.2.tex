@@ -1,23 +1,339 @@
 \renewcommand{\theequation}{\theenumi}
 
 \begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
-\item A point moves so that its distance from the point $\myvec{2\\1}$ is double its distance from the point $\myvec{1\\2}$.  Find
-the equation of its locus.
-\item Find the equation of the perpendicular bisector of the line joining the points $\myvec{3\\-4}$ and $\myvec{-2\\3}$.
-\item Find the equation of the circle of radius 5 with centre at $\myvec{3\\-4}$.
-\item A point moves so that its distance from the $y$-axis is equal to the distance from the point $\myvec{2\\1}$. Find the equation of its locus.
+		\numberwithin{equation}{enumi}
+
+	\item Describe the following sets verbally
+\begin{enumerate}
+	\item $S = \cbrak{\text{Mercury, Venus, Earth, \dots, Pluto}}$
+	\item $S = \cbrak{\text{Andhra Pradesh, Uttar Pradesh,  \dots, Assam}}$
+\end{enumerate}
+\solution 
+\begin{enumerate}
+	\item Planets
+	\item Indian states
+\end{enumerate}
+\item Describe the following sets verbally
+\begin{enumerate}
+	\item $S = \cbrak{2, 4, 6, 8, \dots}$
+	\item $S = \cbrak{2, 4, 8,  16, \dots}$
+	\item $S = \cbrak{1, 4, 9, 16, 25, 36 \dots}$
+\end{enumerate}
+\solution 
+\begin{enumerate}
+	\item Even numbers
+	\item Powers of 2
+	\item Squares of positive integers
+\end{enumerate}
+\item If $A$ is the set of all residents of India, $B$ the set of all Sri Lankan citizens, and $C$ the set of all
+	women in the world, describe the sets $ABC, A-B, A-C, C-A$ verbally.
+	\\
+		\solution 
+\begin{enumerate}
+	\item $ABC$ is the set of all women residents of India who are citizens of Sri Lanka.
+	\item $A-B = AB^{\prime}$ is the set of all residents of India who are not Sri Lankan citizens.
+	\item $A-C = AC^{\prime}$ is the set of all male residents of India.
+	\item $C-A = CA^{\prime}$ is the set of all women who are not residing in India.
+\end{enumerate}
+\item If $A = \cbrak{1, 4, 7, a} $ and $B = \cbrak{3,4,9,11}$ and you have been told that $AB = \cbrak{4, 9}$, then
+	what must $a$ be?
+		\\
+		\solution $a = 9$
+	\item If $A \subset B, B \subset C$, prove that $A \subset C$
+		\\
+		\solution From the given information, 
+		\begin{align}
+A+P = B, AP = 0, B + Q = C, B Q = 0
 \\
+\implies 
+	B+Q = A+P+Q =C,
+		\end{align}
+		$\because BQ = 0$, 
+		\begin{align}
+			AQ + PQ = 0 \implies AQ = 0, PQ = 0
+		\end{align}
+		Hence, 
+		\begin{align}
+			A\brak{P+Q} = 0 \implies A \subset C
+		\end{align}
+	\item If $A \subset B$ prove that $ A \cup C \subset B \cup C$ for any set $C$.
+		\\
+		\solution From the given information, there exists $P$ such that
+		\begin{align}
+			A+P = B, AP = 0
+		\end{align}
+		Also, 
+		\begin{align}
+			B+C = A+P+C
+			\\
+			\implies A+C \subset B+C
+		\end{align}
+	\item Show that 
+		\begin{align}
+			A \cup B = B \cup A
+			\\
+			A \cap B = B \cap A
+		\end{align}
+
+	\item Prove that 
+		\begin{align}
+			\brak{A-B}\cup
+			\brak{B-A} = 
+			\brak{A\cup B} - 
+			\brak{A\cap B}
+		\end{align}
+		\solution 
+		Since 
+		\begin{align}
+			A-B = AB^{\prime},
+			\\
+			\brak{A-B}\cup
+			\brak{B-A} =  AB^{\prime} + BA^{\prime}
+		\end{align}
+		Also, 
+		\begin{align}
+			\brak{A\cup B} - 
+			\brak{A\cap B}
+			&			= \brak{A+B}\brak{AB}^{\prime}
+			\\
+			&			= \brak{A+B}\brak{A^{\prime}+B^{\prime}}
+			\\
+			&= AB^{\prime} + BA^{\prime}
+		\end{align}
+	\item Prove that 
+		\begin{align}
+			\brak{A}\cap
+			\brak{B \cup C} = 
+			\brak{A\cap B} \cup 
+			\brak{A\cap C}
+		\end{align}
+		\solution 
+		\begin{align}
+			LHS = A\brak{B+C} = AB + AC = RHS
+		\end{align}
+	\item Prove that 
+		\begin{align}
+			\brak{A}\cup
+			\brak{B \cap C} = 
+			\brak{A\cup B} \cap 
+			\brak{A\cup C}
+		\end{align}
+		\solution 
+		\begin{align}
+			LHS &= A+BC 
+			\\
+			RHS &= \brak{A+B}\brak{A+C}
+			\\
+			&= A + A\brak{B+C} + BC
+			\\
+			&= A\brak{1+B+C} + BC
+			\\
+			&= LHS
+		\end{align}
+	\item Write down all the subsets of $S = \cbrak{1,2,3,4}$.
+		\\
+		\solution Write a program for this.
+	\item If $C$ is a subset of $S$, let $C^{\prime}$ denote the complement of $C$ in $S$.  Prove the
+		{\em De Morgan Rules} for subsets $A, B$ of $S$, namely, 
+
+\begin{enumerate}
+	\item $\brak{A \cup B}^{\prime}= A^{\prime} \cap B^{\prime}$
+	\item $\brak{A \cap B}^{\prime}= A^{\prime} \cup B^{\prime}$
+\end{enumerate}
+\solution 
+\begin{enumerate}
+	\item 
+		\begin{align}
+			\brak{A+B}A^{\prime}B^{\prime} &= AA^{\prime}B^{\prime} + BA^{\prime}B^{\prime} 
+			\\
+			&= 0
+		\end{align}
+	\item Substituting $A = A^{\prime}, B = B^{\prime}$ in the above, the second result is obtained.
+
+\end{enumerate}
+\item Let $S$ be a set.  For any to subsets of $S$, we define 
+		\begin{align}
+			A \oplus B = \brak{A-B}\cup \brak{B\cup A}
+		\end{align}
+		Prove that
+\begin{enumerate}
+	\item $A \oplus B = B \oplus A $.
+	\item $A \oplus \Phi = A $.
+	\item $A\cdot A = A $.
+	\item $A \oplus A = \Phi $.
+	\item $A \oplus \brak{B \oplus C} = \brak{A \oplus B} \oplus C $.
+	\item If $A \oplus B = A \oplus C$, then $B = C$.
+	\item $A\cdot \brak{B+C} = A\cdot B + A \cdot C $.
+\end{enumerate}
+\solution All can be proved using boolean logic.
+\item If $C$ is a finite set, let $m(C)$ denote the number of elements in $C$.  If $A, B$ are finite sets, 
+	prove that 
+		\begin{align}
+			m\brak{A \cup B} = m\brak{A} + m \brak{B} -m\brak{A\cap B}
+		\end{align}
+		\solution 
+		\begin{align}
+A^{\prime}B^{\prime} &=  \brak{A+B}^{\prime}
+\\
+\implies m\brak{A^{\prime}B^{\prime}} &=  m\brak{\brak{A+B}^{\prime}} 
+\\
+&= 1 - m\brak{A+B} 
+\label{eq:axiom_sum_one}
+\end{align}
+\begin{align}
+\because A+B &= A\brak{B+B^{\prime}} + B
+\\
+&= B \brak{A +1} + A B^{\prime}
+\\
+&=B + A B^{\prime}
+\\
+\implies m\brak{A+B} &= m\brak{B + A B^{\prime} }
+\\
+&=m\brak{B}+m\brak{ A B^{\prime} } 
+\\
+&\because B \brak{ A B^{\prime} } = 0
+\label{eq:axiom_sum_two}
+\end{align}
+\begin{align}
+A = A \brak{B+B^{\prime}} =  AB + AB^{\prime}
+\label{eq:axiom_sum_A}
+\end{align}
+and 
+\begin{align}
+\brak{ AB}\brak{  AB^{\prime}} = 0, \because BB^{\prime} = 0
+\label{eq:axiom_sum_AB0}
+\end{align}
+Hence, $AB$ and $AB^{\prime}$ are mutually exclusive and 
+%
+\begin{align}
+m\brak{A} = m\brak{AB} + m\brak{AB^{\prime}}
+\\
+\implies 
+m\brak{AB^{\prime}} =  m\brak{A} - m\brak{AB}
+\label{eq:axiom_sum_ABp}
+\end{align}
+ Substituting \eqref{eq:axiom_sum_ABp} in \eqref{eq:axiom_sum_two}, 
+\begin{align}
+m\brak{A+B} &= m\brak{A} + m\brak{B} - m\brak{AB} 
+\label{eq:axiom_sum_AB}
+\end{align}
+\item For three finite sets $A, B, C$, find a formula for $m\brak{A \cup b \cup C}$.
+	\solution Extend the above.
+\item Take a shot at finding $m \brak{\cup_{i=1}^{n}A_i}$.
+\item Show that if $80 \%$ of all Indians have gone to high school and $70 \%$ of all Indians read a daily newspaper, then {\em at least} $50 \%$ of all Indians have both gone to high school and read a daily newspaper.
+	\\
+	\solution Let $A$ represent high school and $B$ represent newspaper.  Then, 
+\begin{align}
+	\pr{AB} = \pr{A} + \pr{B} - \pr{A+B}
+\end{align}
+Since 
+\begin{align}
+\pr{A+B} \le 1, 
+\\
+	\pr{A} + \pr{B} - \pr{A+B} &\ge 
+	\pr{A} + \pr{B} - 1 
+	\\
+	\implies 
+	\pr{AB} &\ge 0.8+0.7 -1
+	\\
+	& = 0.5
+\end{align}
+
+\item A public opinion poll shows that $90 \%$ of the population agreed with the government on the first decision, $84 \%$ on the second, and $74\%$ on the third, for three decisions made by the government.  At least what percentage
+	of the population agreed with the government on all three decisions.
+	\\
+	\solution Let the decisions be $A, B, C$.  Then, 
+\begin{align}
+	\label{eq:sets-ab-abc}
+	\pr{AB} \ge \pr{ABC},
+	\\
+	\pr{BC} \ge \pr{ABC},
+	\\
+	\pr{CA} \ge \pr{ABC}
+\end{align}
+Since 
+\begin{multline}
+	\pr{A+B+C} = \sum\pr{A} 
+	\\
+	- \sum \pr{AB} + \pr{ABC}, 
+	\\
+\implies 	\pr{A+B+C} + \sum \pr{AB}  
+	\\
+	= \sum\pr{A} + \pr{ABC}, 
+\end{multline}
+	from \eqref{eq:sets-ab-abc},
+\begin{multline}
+\pr{A+B+C} + 3\pr{ABC}  
+	\\
+	\ge \sum\pr{A} + \pr{ABC}, 
+\\
+\implies 
+ 2\pr{ABC}   \ge \sum\pr{A} - \pr{A+B+C}
+\end{multline}
+Since 
+\begin{align}
+	\pr{A+B+C} &\le 1,
+	\\
+	-\pr{A+B+C} &\ge -1
+	\\
+	\implies 
+ 2\pr{ABC}  & \ge \sum\pr{A} - 1
+ \\
+	\text{or}
+	\pr{ABC}  & \ge \frac{\sum\pr{A} - 1}{2}
+	\\
+	&= 0.74
+\end{align}
+\item In his book {\em A Tangled Tale}, Lewis Caroll proposed the following riddle about a group of disabled veterans.  ``Say that $70\%$ have lost an eye, $75\%$ an ear, $80\%$ an arm, $85\%$ a leg.  What percentage, at least, must
+	have lost all four?''  Solve Lewis Caroll's problem.
+	\\
+	\solution Let $A_i$ represent the events.  Then, 
+\begin{multline}
+	\pr{\sum_{i=1}^{4}A_i} = \sum_{i=1}^{4}\pr{A_i} 
+	- \sum_{i,j} \pr{A_iA_j} 
+	\\
+	+ \sum_{i,j,k} \pr{A_iA_jA_k} - \pr{\prod_{i = 1}^{4}A_i} 
+	\label{eq:1.2-caroll-first}
+\end{multline}
+Now, 
+\begin{align}
+	\pr{A_1A_2} &\ge \pr{A_1A_2A_3} \ge \pr{A_1A_2A_3A_4}
+\end{align}
+which, upon substitution in 
+	\eqref{eq:1.2-caroll-first}
+	yields
+	\begin{align}
+		\pr{\sum_{i=1}^{4}A_i} &\ge \frac{\sum_{i=1}^{4}\pr{A_i}-1 }{1 + \comb{4}{2}-\comb{4}{3}}
+		\\
+		&= 70\%
+	\end{align}
+\item Show, for finite sets $A, B$, that $m\brak{A \times B} = m\brak{A} \times m\brak{B}$.
+	\\
+	\solution  Basic principle of counting.
+\item If $S$ is a set having five elements, 
+\begin{enumerate}
+	\item How many subsets does $S$ have?
+	\item How many subsets having four elements does $S$ have?
+	\item How many subsets having two elements does $S$ have?
+\end{enumerate}
+\solution 
+\begin{enumerate}
+	\item $2^5 = 32$.
+	\item $\comb{5}{4} = 5$.
+	\item $\comb{5}{2} = 10$.
+\end{enumerate}
+\item 
+\begin{enumerate}
+	\item Show that a set having $n$ elements has $2^n$ subsets.
+	\item If $0 < m < n$, how many subsets are there that have exactly $m$ elements?
+\end{enumerate}
 \solution
-\input{solutions/1/2/4/Assignment4.tex}
-\item  A point moves so that the sum of the squares of its distance from the points $\myvec{3\\4}$ and $\myvec{4\\3}$ is constant.  Find the equation of the
-locus.
-\item A point moves so that its distance from the axis of $x$ is twice its distance from the point $\myvec{0\\1}$.  Find the equation of the locus.
-\item A point moves in such a way that with the points $\myvec{2\\3}$ and $\myvec{-3\\4}$ it forms a triangle of area 8.5.  Show that its locus has an equation
-\begin{equation}
-\cbrak{\myvec{1 & 5}\vec{x}}\cbrak{\myvec{1 & 5}\vec{x}-34} = 0
-%\myvec{x+5y}\myvec{x+5y-34} = 0
-\end{equation}
-%\numberwithin{equation}{enumi}
-
-
+\begin{enumerate}
+	\item The number of subsets is 
+		\begin{align}
+			\sum_{k=0}^{n}\comb{n}{k} = 2^n
+		\end{align}
+		using the binomial theorem.
+	\item The number of subsets having exactly $m$ elements are $\comb{n}{m}$.
+\end{enumerate}
 \end{enumerate}

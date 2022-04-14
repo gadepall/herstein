@@ -14,11 +14,97 @@
 	\item let $S$ be a set having an operation * which assigns an element a*b of S for any $a,b \in S$. Let us assume that the following two rules hold:
 		\begin{enumerate}
 			\item If $a,b$ are any objects in $S$, then $a*b = a$.
+				\label{cond:1.1.1}
 			\item If $a,b$ are any objects in $S$, then $a*b = b*a$.
+				\label{cond:1.1.2}
 		\end{enumerate}
 		Show that $S$ can have at most one object.
-		\solution Let $a ne b$.  From the given information, 
+		\\
+		\solution From condition
+				\ref{cond:1.1.1}, interchanging $a, b$, 
 		\begin{align}
-			b
+			b*a = b
 		\end{align}
+		and from condition
+				\ref{cond:1.1.2},
+		\begin{align}
+			b*a = a*b 
+		\end{align}
+		But from condition \ref{cond:1.1.1}, 
+		\begin{align}
+			a*b = a \implies a = b
+		\end{align}
+		Thus, $S$ can have at most one object.
+	\item Let $S$ be the set of all integers $0, \pm 1, \pm 2, \dots, \pm n, \dots$.  For $a, b \in S$, define * by
+		\begin{align}
+			a*b = a-b
+		\end{align}
+		Verify the following
+		\begin{enumerate}
+			\item $a*b \ne b*a $ unless $a = b$
+			\item $(a*b)*c \ne a*(b*c)$ in general.  Under what conditions on $a, b, c$ is 
+		\begin{align}
+(a*b)*c \ne a*(b*c) \quad ?
+		\end{align}
+	\item The integer $a$ has the property that $a*0 = a$ for every $a \in S$.
+	\item For $a \in S, a*a = 0$. 
+		\end{enumerate}
+		\solution 
+				\begin{enumerate}
+					\item 
+		\begin{align}
+			a*b &=  b*a 
+\\
+			\implies a-b &= b-a
+			\\
+			\text{or, } a &= b
+		\end{align}
+	\item Let $a = 1, b = 2, c = 4$.  Then, 
+		\begin{align}
+			a*b = -1, (a*b)*c = -1-4 = -5
+			\\
+			b*c = -2, a*(b*c) = 1 +2 = 3 \ne -5
+		\end{align}
+		Thus, for the given condition to be satisfied, 
+		\begin{align}
+			(a-b)-c &= a - (b-c)
+			\\
+			\implies c = 0
+		\end{align}
+	\item 
+		\begin{align}
+			a*0 = a-0 = a
+		\end{align}
+	\item 
+		\begin{align}
+			a*a = a - a = 0
+		\end{align}
+
+		\end{enumerate}
+	\item Let S consist of the two objects $\square$ and $\triangle$.  We define the operatin * on $S$ by 
+		subjecting $\square$ and $\triangle$ to the following conditions.
+		\begin{enumerate}
+			\item $\square * \triangle = \triangle = \triangle *\square $
+			\item $\square * \square = \square $
+			\item $\triangle *\triangle =\square $
+		\end{enumerate}
+		Verify by explicit calculation that if $a,b,c$ are any elements of $S$, (i.e. $a,b,c$ can be any of $\square$ or $\triangle$), then 
+		\begin{enumerate}
+			\item $a*b$ is in $S$
+			\item $\brak{a*b}*c = a*\brak{b*c}$ 
+			\item $a*b = b*a$
+			\item There is a particular $a$ in $S$ such that $a*b = b*a = b$ for all $b \in S$
+				\label{1.2.4}
+			\item Given $b \in S, b*b = a$, where $a$ is the particular element in Part 
+				\ref{1.2.4}.
+		\end{enumerate}
+		\solution Let $\square = 1, \triangle = -1$.  These satisfy all the given conditions.
+		\begin{enumerate}
+			\item $a*b \in \sbrak{1, -1} \in S$.
+			\item Writing the truth table, $\brak{a*b}*c = a*\brak{b*c}$.
+			\item $a*b = b*a$ can be verified by writing the truth table.
+			\item For $a = 1, a*b = b*a = b$, for all $b \in S$.
+			\item For $a = 1$, if $b= -1, b*b = 1 = a$.  This can be shown to be true for $b =1$ as well.
+		\end{enumerate}
+
 \end{enumerate}
