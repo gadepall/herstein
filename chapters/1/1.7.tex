@@ -1,0 +1,503 @@
+\renewcommand{\theequation}{\theenumi}
+
+\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+		\numberwithin{equation}{enumi}
+	\item Multiply
+		\begin{enumerate}
+			\item $\brak{6-7\j}\brak{8+\j}$
+			\item $\brak{\frac{2}{3}+\frac{3}{2}\j}\brak{\frac{2}{3}-\frac{3}{2}\j}$
+			\item $\brak{6+7\j}\brak{8-\j}$
+		\end{enumerate}
+		\solution 
+		\begin{enumerate}
+			\item 
+				\begin{align}
+					\brak{6-7\j}\brak{8+\j} &= \myvec{6 & 7 \\ -7 & 6}\myvec{8 \\ 1}
+					\\
+					&= \myvec{53 \\ -50} = 53 - 50 \j
+				\end{align}
+			\item 
+				\begin{align}
+					\brak{\frac{2}{3}+\frac{3}{2}\j}\brak{\frac{2}{3}-\frac{3}{2}\j} &= \myvec{\frac{2}{3} & -\frac{3}{2}\\ \frac{3}{2} &\frac{2}{3}}\myvec{\frac{2}{3} \\ -\frac{3}{2}}
+					\\
+					&=\myvec{\frac{97}{36} \\ 0} = \frac{97}{36}
+				\end{align}
+			\item
+				\begin{align}
+					\brak{6+7\j}{8-\j} &= \sbrak{\brak{6-7\j}{8+\j}}^{*}
+					\\
+					&= \brak{53 - 50 \j}^{*} = 53 + 50 \j
+				\end{align}
+		\end{enumerate}
+	\item Find $z^{-1}$ for
+		\begin{enumerate}
+			\item $z = 6+8\j$
+			\item $z = 6-8\j$
+			\item $z = \frac{1}{\sqrt{2}}\brak{1+\j}$
+		\end{enumerate}
+		\solution
+		\begin{enumerate}
+			\item 
+
+				\begin{align}
+					z^{-1} = \frac{z^{*}}{\abs{z}^2} = \frac{6-8\j}{100}
+				\end{align}
+			\item 
+				\begin{align}
+					z^{-1} =  \frac{6+8\j}{100}
+				\end{align}
+			\item 
+				\begin{align}
+					z^{-1} =  \frac{1-\j}{\sqrt{2}}
+				\end{align}
+		\end{enumerate}
+	\item Show that 
+				\begin{align}
+					\label{eq:1.7.3}
+		\brak{z^{*}}^{-1} = \brak{z^{-1}}^{*}
+				\end{align}
+		\solution Since
+				\begin{align}
+						zz^{-1} &= 1, 
+\\
+						\brak{zz^{-1}}^{*} &= 1 
+						\\
+						\implies 
+						\brak{z}^{*}\brak{z^{-1}}^{*} &= 1 
+				\end{align}
+				yielding
+					\eqref{eq:1.7.3}.
+				\item Find 
+				\begin{align}
+					\brak{\cos \theta + \j \sin \theta}^{-1}
+				\end{align}
+
+
+				\solution  
+				\begin{align}
+					\brak{\cos \theta + \j \sin \theta}^{-1} = \cos \theta - \j \sin \theta
+				\end{align}
+			\item Verify the following
+				\begin{enumerate}
+					\item	$\brak{z^{*}}^{*} = z$
+					\item	$\brak{z+w}^{*} = z^{*}+w^{*}$
+					\item $z + z^{*} = 2 \re{z}$
+					\item $z - z^{*} = 2 \j\im{z}$
+				\end{enumerate}
+				\solution
+				\begin{enumerate}
+					\item For 
+				\begin{align}
+					z &= a + \j b, 	
+					\\
+					z^{*} &= a - \j b, 	
+					\\
+					\implies \brak{z^{*}}^{*} &= a +\j b = z
+				\end{align}
+			\item For 
+				\begin{align}
+					\begin{split}
+					z &= z_1 + \j z_2
+					\\
+					w &= w_1 + \j w_2,
+					\end{split}
+					\\
+					\brak{z+w}^{*} &= \brak{z_1 + \j z_2+ w_1 + \j w_2}^{*}
+					\\
+					&= \brak{z_1 - \j z_2}+ \brak{w_1 - \j w_2}
+					\\
+					&= z^{*} + w^{*}
+				\end{align}
+			\item 	For 
+				\begin{align}
+					z &= a + \j b, 	
+					\\
+					z^{*} &= a - \j b, 	
+					\\
+					\implies \brak{z+z^{*}} &= a +\j b + a - jb
+					\\
+					&=2a = 2 \re{z}
+				\end{align}
+			\item 	For 
+				\begin{align}
+					z &= a + \j b, 	
+					\\
+					z^{*} &= a - \j b, 	
+					\\
+					\implies \brak{z-z^{*}} &= a +\j b - a + jb
+					\\
+					&=2\j b = 2 \im{z}
+				\end{align}
+
+				\end{enumerate}
+			\item Show that $z$ is real if and only if $z^{*} = z$ and is purely imaginary if and only if $z^{*} = -z$.
+				\solution Let
+				\begin{align}
+					z = a + \j b.
+				\end{align}
+				Then 
+				\begin{align}
+					z^{*} = a - \j b.
+				\end{align}
+				If 
+				\begin{align}
+					z^{*} &= z,
+					\\
+					a + \j b &= 
+					a - \j b 
+					\\
+					\implies b = 0
+				\end{align}
+				and $z$ is real.  If $z$ is real, 
+				\begin{align}
+					z &= a
+					\\
+					\implies z^{*} &= a
+					\\
+					\text{or, } z = z^{*}
+				\end{align}
+Similarly, the other property can be proved.
+\item Verify the commutative law of multiplication $zw  = wz$ in $\mathbb{C}$.
+	\\
+	\solution
+	Let 
+				\begin{align}
+					z &= a + \j b
+					\\
+					w &= x - \j y
+				\end{align}
+				Then
+				\begin{align}
+					zw &= \myvec{
+						a & -b
+						\\
+						b & a
+					}
+					\myvec{x \\ y}
+					\\
+					&=  \myvec{
+						x & -y
+						\\
+						y & x
+					}
+					\myvec{a \\ b}
+					\\
+					&= wz
+				\end{align}
+			\item Show that for $z \ne 0$, $\abs{z}^{-1} = \frac{1}{\abs{z}}$.
+				\\
+				\solution 
+				Let
+				\begin{align}
+					z = re^{\j \theta}.
+				\end{align}
+				Then 
+				\begin{align}
+					z^{-1} &= \frac{1}{r}e^{-\j \theta}
+					\\
+					\implies \abs{z^{-1}} &= \frac{1}{r}
+				\end{align}
+			\item Find
+\begin{enumerate}
+	\item $\abs{6 -4\j}$.
+	\item $\abs{\frac{1}{2} +\frac{2}{3}\j}$.
+	\item $\abs{\frac{1}{\sqrt{2}}\brak{1+\j}}$
+\end{enumerate}
+\solution 
+\begin{enumerate}
+	\item 
+				\begin{align}
+					\abs{6 -4\j} = \sqrt{6^2 + 4^2} = 2 \sqrt{13}
+				\end{align}
+			\item  				\begin{align}
+					\abs{\frac{1}{2} +\frac{2}{3}\j} = \frac{5}{6}
+				\end{align}
+\item  				\begin{align}
+		\abs{\frac{1}{\sqrt{2}}\brak{1+\j}} = \frac{1}{\sqrt{2}}\abs{\brak{1+\j}} = 1
+\end{align}
+
+
+\end{enumerate}
+\item Show that $\abs{z^{*}} = \abs{z}$.
+\\
+\solution Let 
+\begin{align}
+	z = re^{\j\theta}
+\end{align}
+Then 
+\begin{align}
+	z^{*} &= re^{-\j\theta}
+	\\
+	\implies \abs{z^{*}} &= r = \abs{z}.
+\end{align}
+\item Find the polar form for 
+\begin{enumerate}
+	\item $z = \frac{\sqrt{2}}{2}-\frac{1}{\sqrt{2}}\j$.
+	\item $z = 4\j$.
+	\item $z = \frac{6}{\sqrt{2}}+ \frac{6}{\sqrt{2}}\j$.
+	\item $z = -\frac{13}{2}+\frac{39}{2\sqrt{3}}\j$.
+\end{enumerate}
+\solution 
+\begin{enumerate}
+	\item 
+		\begin{align}
+			\abs{z} &= \sqrt{\brak{\frac{\sqrt{2}}{2}}}^2 + \brak{\frac{1}{\sqrt{2}}}^2.
+			\\
+			&= 1
+		\end{align}
+		and 
+		\begin{align}
+			\angle{z} &= - \tan^{-1} \frac{\frac{1}{\sqrt{2}}}{\frac{1}{\sqrt{2}}}
+			\\
+			&= \frac{\pi}{4}
+		\end{align}
+	\item 
+		\begin{align}
+			\abs{z} = 4, \angle{z} = \frac{\pi}{2}.
+		\end{align}
+	\item 
+		\begin{align}
+			\abs{z} = \frac{6}{\sqrt{2}}, \angle{z} =  \frac{\pi}{4}.
+		\end{align}
+	\item 
+		\begin{align}
+			\abs{z} &= \frac{13}{2}\sqrt{1 + 3}
+			\\
+			&= 13
+		\end{align}
+		and 
+		\begin{align}
+			\angle{z} &= \pi - \tan^{-1}\frac{\frac{39}{2\sqrt{3}}}{\frac{13}{2}}
+			\\
+			&= \pi - \tan^{-1}\sqrt{3} = \frac{2\pi}{3}
+		\end{align}
+\end{enumerate}
+\item  Prove that
+		\begin{align}
+			\brak{\cos\brak{\frac{\theta}{2}}+\j\sin\brak{\frac{\theta}{2}}}^2 = \cos\brak{\theta}+\j\sin\brak{\theta}
+		\end{align}
+		\solution The L.H.S can be expressed as 
+		\begin{align}
+			\brak{e^{\j\theta}}^2 = e^{\j\theta}
+		\end{align}
+	\item Show that
+		\begin{align}
+			\brak{\frac{1}{2}+\frac{\sqrt{3}}{2}\j}^3 = -1
+		\end{align}
+		\solution
+		\begin{align}
+\frac{1}{2}+\frac{\sqrt{3}}{2}\j &= e^{\frac{\j\pi}{3}}
+			\\
+			\implies \brak{e^{\frac{\j\pi}{3}}}^3 &= e^{\j\pi} = -1
+		\end{align}
+	\item Show that 
+		\begin{align}
+			\brak{\cos\brak{\theta}+\j\sin\brak{\theta}}^m = 
+			\cos\brak{m\theta}+\j\sin\brak{m\theta}  
+			\label{eq:demoivre}
+		\end{align}
+		for all integers $m$.
+		\solution It is easy to verify that 
+		\begin{align}
+			\brak{ \cos\brak{\theta}+\j\sin\brak{\theta}}^2 = 
+			 \cos\brak{2\theta}+\j\sin\brak{2\theta}  
+		\end{align}
+		Then 
+		\begin{multline}
+			\brak{\cos\brak{\theta}+\j\sin\brak{\theta}}^{k+1} = 
+			\brak{\cos\brak{\theta}+\j\sin\brak{\theta}}^{k}
+			\\
+			\brak{ 
+			\cos\brak{m\theta}+\j\sin\brak{m\theta}  }
+			\\
+			=
+			\cos\sbrak{\brak{k+1}\theta+\j\sin\brak{\brak{k+1}\theta} }
+		\end{multline}
+		By induction, 
+			\eqref{eq:demoivre}
+			is proved.
+	\item Show that 
+		\begin{align}
+			\brak{\cos\brak{\theta}+\j\sin\brak{\theta}}^r = 
+			\cos\brak{r\theta}+\j\sin\brak{r\theta}  
+			\label{eq:demoivre-rational}
+		\end{align}
+		for all rational numbers $r$.
+			\solution 	
+			Let 
+		\begin{align}
+			r = \frac{m}{n},  \brak{\cos\brak{\theta}+\j\sin\brak{\theta}}^{\frac{1}{n}} = \cos\brak{\alpha}+\j\sin\brak{\alpha}
+		\end{align}
+		Then 
+		\begin{align}
+			\brak{	\cos\brak{\alpha}+\j\sin\brak{\alpha} }^{n} &= \brak{\cos\brak{\theta}+\j\sin\brak{\theta}}
+			\\
+			\implies \cos\brak{n\alpha}+\j\sin\brak{n\alpha}  &= \brak{\cos\brak{\theta}+\j\sin\brak{\theta}}
+			\\
+			\text{or, } \alpha = \frac{\theta}{n}
+		\end{align}
+		yielding 
+		\begin{align}
+			\brak{\cos\brak{\theta}+\j\sin\brak{\theta}}^{\frac{1}{n}} = \cos\brak{\frac{\theta}{n}}+\j\sin\brak{\frac{\theta}{n}}
+			\label{eq:demoivre-inv}
+		\end{align}
+			Using \eqref{eq:demoivre} and  
+			\eqref{eq:demoivre-inv},
+		\begin{align}
+\brak{\cos\brak{\theta}+\j\sin\brak{\theta}}^{\frac{m}{n}}
+= \cos\brak{\frac{m\theta}{n}}+\j\sin\brak{\frac{m\theta}{n}}
+		\end{align}
+	\item If $z \in \mathbb{C}$ and $n \ge 1$ is any positive integer, show that there are $n$ distinct complex numbers such that $z = w^n$.
+		\solution Let 
+		\begin{align}
+			z = \cos\brak{\theta}+\j\sin\brak{\theta}
+		\end{align}
+		then using 
+			\eqref{eq:demoivre-inv},
+		\begin{align}
+			w = \cos\brak{\frac{2\pi k +\theta}{n}}+\j\sin\brak{\frac{2\pi k +\theta}{n}}, k = 0,\dots,n-1
+		\end{align}
+		which are the distinct roots.
+	\item Find the necessary and sufficient condition on $k$ such that 
+		\begin{align}
+			\brak{\cos\brak{\frac{2\pi k }{n}}+\j\sin\brak{\frac{2\pi k }{n}}}^n = 1 \quad \text{and} 
+			\\
+			\brak{\cos\brak{\frac{2\pi k }{n}}+\j\sin\brak{\frac{2\pi k }{n}}}^m \ne 1 \quad 0 < m < n
+		\end{align}
+		\solution From the above equations, using 
+			\eqref{eq:demoivre}, 
+		\begin{align}
+			\frac{mk}{n} \notin \mathbb{Z}
+		\end{align}
+	\item Viewing the $x-y$ plane as the set of all complex numbers $x+\j y$, show that multiplication by $j$ induces as $90\degree$ rotation of the $x-y$ plan in counterclockwise direction.
+		\label{prob:rot}
+		\\
+		\solution The given multiplication can be expressed using matrices as 
+		\begin{align}
+			\myvec{
+				\cos 90\degree & -\sin 90\degree
+				\\
+				\sin 90\degree & \cos 90\degree
+			}	
+			\myvec{x \\ y}
+		\end{align}
+		which is the multiplication of $\myvec{x\\y}$ with a $90\degree$ rotation matrix.
+	\item In problem 
+		\eqref{prob:rot}, interpret geometrically what multiplication by the complex number $a + \j b$ does to the $x-y$ plane.
+		\\
+		\solution The multiplication can be represented as 
+		\begin{align}
+			\sqrt{a^2+b^2}
+			\myvec{
+				\cos \theta & -\sin \theta
+				\\
+				\sin \theta & \cos \theta
+			}	
+			\myvec{x \\ y}
+		\end{align}
+		where 
+		\begin{align}
+			\cos \theta  &= \frac{a}{\sqrt{a^2+b^2}}
+			\sin\theta  &= \frac{b}{\sqrt{a^2+b^2}}
+		\end{align}
+		Geometrically, multiplication by $a+\j b$ results in rotation by $\theta$ and scaling by $\sqrt{a^2+b^2}$.
+	\item Prove that 
+		\begin{align}
+			\abs{z+w}^2+\abs{z-w}^2 = 2\brak{\abs{z}^2 + \abs{w}^2}
+			\label{eq:pgm}
+		\end{align}
+		\solution 
+		Since 
+		\begin{align}
+			\abs{z+w}^2 &= \brak{z+w}^{*}\brak{z+w}
+			\\
+			&= \abs{z}^2 + \abs{w}^2 +2z^{*}w
+		\end{align}
+		and 
+		\begin{align}
+			\abs{z-w}^2 &= \brak{z+w}^{*}\brak{z-w}
+			\\
+			&= \abs{z}^2 + \abs{w}^2 -2z^{*}w, 
+		\end{align}
+		\begin{align}
+			\abs{z+w}^2+\abs{z-w}^2 
+			&= 2\brak{\abs{z}^2 + \abs{w}^2}
+		\end{align}
+	\item Consider the set $A = a  + b\j, a, b \in \mathbb{Z}$. Prove that there is  1-1 correspondence of $A$ onto $\mathbb{N}$.
+	\item If $a$ is a (complex) root of the polynomial
+		\begin{align}
+			x^{n} +\alpha_1x^{n-1} + \dots + \alpha_{n-1}x + \alpha_n,
+		\end{align}
+		where the $\alpha_i$ are real, show that $\bar{a}$ must also be a root.
+		\\
+		\solution From the given information, 
+		\begin{align}
+			\bar{a}^{n} +\alpha_1\bar{a}^{n-1} + \dots + \alpha_{n-1}\bar{a} + \alpha_n = 0
+		\end{align}
+		Thus, $\bar{a}$ is also a root of the given polynomial.
+	\item Find the necessary and sufficient conditions on $z$ and $w$ in order that
+		\begin{align}
+			\abs{z+w} = \abs{z} + \abs{w}
+		\end{align}
+		\solution 
+		\begin{align}
+			\abs{z+w}^2 
+			&= \abs{z}^2 + \abs{w}^2 +2z^{*}w
+			\\
+			\brak{\abs{z} + \abs{w}}^2 &= \abs{z}^2 + \abs{w}^2 +2\abs{z}\abs{w}
+		\end{align}
+		If the above expressions are equal, 
+		\begin{align}
+z^{*}w = \abs{z}\abs{w}
+		\end{align}
+		which is the desired condition.
+	\item Find the necessary and sufficient conditions on $z_i$  in order that
+		\begin{align}
+			\abs{\sum_{i=1}^{k}z_i} = \sum_{i=1}^{k}\abs{z_i}
+		\end{align}
+		\solution 
+		\begin{align}
+			\label{eq:csineq1}
+			\abs{\sum_{i=1}^{k}z_i}^2 &= \sum_{i=1}^{k}\abs{z_i}^2 + 2\sum_{i=1,j=1 \atop i \ne j }^{k}{z_i}^* z_j
+			\\
+			\brak{\sum_{i=1}^{k}\abs{z_i}}^2 &= \sum_{i=1}^{k}\abs{z_i}^2 + 2\sum_{i=1,j=1 \atop i \ne j }^{k}\abs{{z_i}}\abs{z_j}
+			\label{eq:csineq2}
+		\end{align}
+			From \eqref{eq:csineq1} and 
+			\eqref{eq:csineq2},
+\begin{multline}
+			\sum_{i=1}^{k}\abs{z_i}^2 + 2\sum_{i=1,j=1 \atop i \ne j }^{k}{z_i}^* z_j
+			\\
+			=
+\sum_{i=1}^{k}\abs{z_i}^2 + 2\sum_{i=1,j=1 \atop i \ne j }^{k}\abs{{z_i}}\abs{z_j}
+\\
+\implies 
+\sum_{i=1,j=1 \atop i \ne j }^{k}{z_i}^* z_j
+\\
+= \sum_{i=1,j=1 \atop i \ne j }^{k}\abs{{z_i}}\abs{z_j}
+\end{multline}
+which is the desired condition.
+\item The complex number $\theta$ is said to have {\em order} $n \ge 1$ if $\theta^{n} = 1$ and $\theta^{m} \ne 1$ for $0 < m < n$.  Show that if $\theta $ has order $n$ and $\theta^k = 1$, where $k > 0$, then $n | k$. 
+	\\
+	\solution From the given information, 
+	\begin{align}
+		\theta^{n} = \theta^{k} = 1, k \ge n
+	\end{align}
+	If $n \nmid k, k = mn+p, 0 < p < n$,  Then, 
+	\begin{align}
+		\theta^{k} = \theta^{mn+p} = \theta^{p} \ne 1,
+	\end{align}
+	which is a contradiction, Hence, $n \mid k$.
+\item Find all complex numbers $\theta$ having order $n$.
+	\\
+	\solution If 
+	\begin{align}
+		\theta^{n} = 1,
+		\\
+		\theta^{n}= e^{\j 2\pi r}, 0 \le r < n 
+	\end{align}
+	yielding
+	\begin{align}
+		\theta = \exp\brak{\j \frac{2\pi r}{n}} 0 \le r < n
+	\end{align}
+\end{enumerate}
