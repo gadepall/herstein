@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.8)  13 JUN 2022 11:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.8)  14 JUN 2022 07:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1499,8 +1499,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
-(./chapters/1/1.7.tex
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Overfull \hbox (70.35123pt too wide) in paragraph at lines 157--157
+[] 
+ []
+
+) (./chapters/1/1.7.tex
 
 LaTeX Warning: Command \j invalid in math mode on input line 7.
 
@@ -1549,7 +1556,6 @@ LaTeX Warning: Command \j invalid in math mode on input line 24.
 
 LaTeX Warning: Command \j invalid in math mode on input line 24.
 
-[5]
 
 LaTeX Warning: Command \j invalid in math mode on input line 30.
 
@@ -1614,26 +1620,26 @@ LaTeX Warning: Command \j invalid in math mode on input line 52.
 LaTeX Warning: Command \j invalid in math mode on input line 52.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 73.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 73.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 79.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 79.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 79.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 79.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [6]
+
+LaTeX Warning: Command \j invalid in math mode on input line 73.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 73.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 79.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 85.
@@ -1761,7 +1767,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 150.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
+
 
 LaTeX Warning: Command \j invalid in math mode on input line 168.
 
@@ -1820,14 +1826,14 @@ LaTeX Warning: Command \j invalid in math mode on input line 217.
 LaTeX Warning: Command \j invalid in math mode on input line 217.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 226.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 226.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [7]
+
+LaTeX Warning: Command \j invalid in math mode on input line 226.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 226.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 232.
@@ -1848,33 +1854,33 @@ LaTeX Warning: Command \j invalid in math mode on input line 237.
 LaTeX Warning: Command \j invalid in math mode on input line 238.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 278.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 278.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 278.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 278.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 282.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 282.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 282.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 282.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 278.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 278.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 278.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 278.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 282.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 282.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 282.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 282.
+
 
 LaTeX Warning: Command \j invalid in math mode on input line 286.
 
@@ -2002,20 +2008,20 @@ LaTeX Warning: Command \j invalid in math mode on input line 338.
 LaTeX Warning: Command \j invalid in math mode on input line 338.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 343.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 343.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 343.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 343.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [8]
+
+LaTeX Warning: Command \j invalid in math mode on input line 343.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 343.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 343.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 343.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 349.
@@ -2062,12 +2068,12 @@ LaTeX Warning: Command \j invalid in math mode on input line 366.
 LaTeX Warning: Command \j invalid in math mode on input line 372.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 386.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 386.
+
 
 LaTeX Warning: Command \j invalid in math mode on input line 403.
 
@@ -2077,38 +2083,36 @@ LaTeX Warning: Command \j invalid in math mode on input line 426.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [9]
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 465.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 498.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 502.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 502.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9])
-[10
 
-] (./main.aux)
+
+LaTeX Warning: Command \j invalid in math mode on input line 498.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 498.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 502.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 502.
+
+) [10] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 575C2ECCAD1D21ABDC852122597182D8;849.
  ) 
 Here is how much of TeX's memory you used:
- 44964 strings out of 478238
- 1029694 string characters out of 5850457
- 1747345 words of memory out of 5000000
+ 44980 strings out of 478238
+ 1029872 string characters out of 5850457
+ 1746344 words of memory out of 5000000
  62100 multiletter control sequences out of 15000+600000
  528641 words of font info for 146 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -2122,10 +2126,10 @@ onts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></us
 r/share/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (10 pages, 117011 bytes).
+Output written on main.pdf (10 pages, 120922 bytes).
 PDF statistics:
- 578 PDF objects out of 1000 (max. 8388607)
- 538 compressed objects within 6 object streams
- 360 named destinations out of 1000 (max. 500000)
+ 598 PDF objects out of 1000 (max. 8388607)
+ 558 compressed objects within 6 object streams
+ 376 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

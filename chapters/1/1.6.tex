@@ -84,6 +84,23 @@
 	\item Let $P(n)$ be a proposition about integers $n$ such that $P(1)$ is true and such that if $P(j)$ is true for all positive integers $j < k$, then $P(k)$ is true.  Prove that $P(n)$ is true for all positive integers $n$.
 	\item Given an example of  a proposition that is {\em not} true for any positive integer, yet for which the induction step holds.
 	\item Prove by induction that a set having $n$ elements has exactly $2^n$ subsets.
+	\\
+\solution
+Let $S = \cbrak{1,2}$.  Then the subsets are 
+\begin{align}
+	\cbrak{\phi}, \cbrak{1}, \cbrak{2}, \cbrak{1,2}
+\end{align}
+For $S = \cbrak{1,2, 3}$,  the subsets are
+\begin{align}
+	\cbrak{\phi}, \cbrak{1}, \cbrak{2}, \cbrak{1,2}
+	\\
+	\cbrak{3}, \cbrak{1,3}, \cbrak{2,3}, \cbrak{1,2,3}
+\end{align}
+Thus $P\brak{n+1}$ can be expressed as
+\begin{align}
+	2^n+2^n = 2^{n+1}
+\end{align}
+Hence, the given proposition is true for all $n \ge 1$.
 	\item Prove by induction on $n$ that $n^3-n$ is always divisible by 3.
 		\\
 		\solution $P(n+1)$ can be expressed as 
@@ -97,9 +114,45 @@
 \\
 \solution $P(n+1)$ can be expressed as 
 		\begin{align}
-			\brak{n+1}^p -\brak{n+1} &= n^p  -n  + p \sum_{k=1}^{n}\comb{n}{k}p^{k-1}
+			\brak{n+1}^p -\brak{n+1} &= n^p  -n  + p \sum_{k=1}^{n-1}\comb{n}{k}p^{k-1}
 			\\
-			&= n^3-n +3\brak{n^2+n}
+			\implies & p \mid \sbrak{\brak{n+1}^p -\brak{n+1}}
 		\end{align}
-
+Hence, the given proposition is true for all $n \ge 1$
+\item  Prove by induction that for a set having $n$ elements the number of $1-1$ mappings of this set
+	onto itself is $n!$.
+	\\
+	\solution Let $S = \cbrak{a, b, c}$.  Then the possible 1-1 onto mappings are
+	\begin{align}
+	\begin{cases}
+a\mapsto b\\
+b\mapsto c\\
+c\mapsto a
+\end{cases}
+\begin{cases}
+a\mapsto b\\
+b\mapsto a\\
+c\mapsto c
+\end{cases}
+\begin{cases}
+a\mapsto c\\
+b\mapsto b\\
+c\mapsto a
+\end{cases}
+\begin{cases}
+a\mapsto a\\
+b\mapsto c\\
+c\mapsto b
+\end{cases}
+\begin{cases}
+a\mapsto a\\
+b\mapsto b\\
+c\mapsto c
+\end{cases}
+\begin{cases}
+a\mapsto a\\
+b\mapsto c\\
+c\mapsto b
+\end{cases}
+	\end{align}
 \end{enumerate}
