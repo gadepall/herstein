@@ -1,0 +1,248 @@
+\renewcommand{\theequation}{\theenumi}
+
+\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+		\numberwithin{equation}{enumi}
+	\item Find $\brak{a,b}$ and express $\brak{a,b}$ as $ma+nb$ for
+\begin{enumerate}
+	\item $\brak{116,-84}$
+	\item $\brak{85,65}$
+	\item $\brak{72,26}$
+	\item $\brak{72, 25}$
+\end{enumerate}
+\solution 
+\begin{enumerate}
+	\item Using the extended Euclid algorithm, 
+		\begin{align}
+			\myvec{116 & 1 & 0
+			\\
+			-84 & 0 & 1
+			}
+			\\
+			\xleftrightarrow[]{R_3\leftarrow R_1 + R_2}
+			\myvec{ 32 & 1 & 1}
+			\\
+			\xleftrightarrow[]{R_4\leftarrow R_2 + 2R_3}
+			\myvec{ -20 & 2 & 3}
+			\\
+			\xleftrightarrow[]{R_5\leftarrow R_4 + R_3}
+			\myvec{ 12 & 3 & 4}
+			\\
+			\xleftrightarrow[]{R_6\leftarrow R_5 + R_4}
+			\myvec{ -8 & 5 & 7}
+			\\
+			\xleftrightarrow[]{R_7\leftarrow R_6 + R_5}
+			\myvec{ 4 & 8 & 11}
+			\\
+			\xleftrightarrow[]{R_8\leftarrow R_7 + 2R_6}
+			\myvec{ 0 & 21 & 29}
+		\end{align}
+		Thus,
+		\begin{align}
+			4 = (8)116 + 11(-84)
+		\end{align}
+
+	\item 
+		\begin{align}
+			\myvec{85 & 1 & 0
+			\\
+			65 & 0 & 1
+			}
+			\\
+			\xleftrightarrow[]{R_3\leftarrow R_1 - R_2}
+			\myvec{ 20 & 1 & -1}
+			\\
+			\xleftrightarrow[]{R_4\leftarrow R_2 - 3R_3}
+			\myvec{ 5 & -3 & 4}
+			\\
+			\xleftrightarrow[]{R_5\leftarrow R_3 -4 R_4}
+			\myvec{ 0 & 13 & -17}
+		\end{align}
+		Thus,
+		\begin{align}
+			5 = (-3)85 + 4(65)
+		\end{align}
+	\item 
+		\begin{align}
+			\myvec{72 & 1 & 0
+			\\
+			26 & 0 & 1
+			}
+			\\
+			\xleftrightarrow[]{R_3\leftarrow R_1 - 2R_2}
+			\myvec{ 20 & 1 & -2}
+			\\
+			\xleftrightarrow[]{R_4\leftarrow R_2 - R_3}
+			\myvec{ 6 & -1 & 3}
+			\\
+			\xleftrightarrow[]{R_5\leftarrow R_3 -3 R_4}
+			\myvec{ 2 & 4 & -11}
+			\\
+			\xleftrightarrow[]{R_6\leftarrow R_4 -3 R_5}
+			\myvec{ 0 & -13 & 36}
+		\end{align}
+		Thus,
+		\begin{align}
+			2 = (4)72 + (-11)26
+		\end{align}
+	\item 
+		\begin{align}
+			\myvec{72 & 1 & 0
+			\\
+			25 & 0 & 1
+			}
+			\\
+			\xleftrightarrow[]{R_3\leftarrow R_1 - 2R_2}
+			\myvec{ 22 & 1 & -2}
+			\\
+			\xleftrightarrow[]{R_4\leftarrow R_2 - R_3}
+			\myvec{ 3 & -1 & 3}
+			\\
+			\xleftrightarrow[]{R_5\leftarrow R_3 -7 R_4}
+			\myvec{ 1 & 8 & -23}
+		\end{align}
+		Thus,
+		\begin{align}
+			1 = (8)72 + (-23)25
+		\end{align}
+\end{enumerate}
+\item Show that the following are true
+\begin{enumerate}
+	\item $1 \mid n$ for all $n$ .
+	\item If $m \ne 0$, then $m \mid 0$.
+	\item If $m \mid n$ and $n \mid q$, then $m \mid q$.
+	\item If $m \mid n$ and $n \mid q$, then $m \mid \brak{un+vq}$ for all $v, u$.
+	\item If $m \mid 1$, then $m = 1$ or $m = -1$.
+	\item If $m \mid n$, and $n \mid m$, then $m = \pm n$.
+\end{enumerate}
+\solution 
+\begin{enumerate}
+	\item  $n = 1\times n$.
+	\item $ 0 = 0 \times m$.
+	\item Let
+		\begin{align}
+		n = cm, q = dn.
+		\end{align}
+			  Then 
+		\begin{align}
+			q = (cdn)m \implies m \mid q
+		\end{align}
+	\item Let
+		\begin{align}
+		n = cm, q = dn.
+		\end{align}
+			  Then 
+		\begin{align}
+			un+vq &= ucm + vdn
+			\\
+			&=(uc+ vdc)m
+			\\
+			\implies m \mid (un+vq)
+		\end{align}
+	\item If 
+		\begin{align}
+			1 &= cm, 
+\\
+			c &= 1, m = 1
+			\\
+			c &= -1, m = -1
+		\end{align}
+	\item 
+		\begin{align}
+			n &= cm, m = dn
+			\\
+			\implies mn &= cdmn
+			\\
+			\text{or, } cd &=1
+		\end{align}
+		Thus, either 
+		\begin{align}
+			c&=d=1, \implies n = m, 
+			\\
+			\text{or, } c&=d=-1, \implies n = -m
+		\end{align}
+\end{enumerate}
+\item Show that 
+		\begin{align}
+			\brak{ma,mb} = m\brak{a,b} \quad m > 0.
+		\end{align}
+		\solution 
+		Let 
+		\begin{align}
+			\brak{a,b} = xa+yb
+		\end{align}
+		Then, 
+		\begin{align}
+			\brak{ma,mb} &= xma + ymb = m\brak{xa+yb}
+			\\
+			&= m \brak{a,b}
+		\end{align}
+	\item Show that if $a \mid m$ and $b \mid m$, and $\brak{a,b} = 1$, then $\brak{ab} \mid m$.
+		\\
+		\solution From the given information, 
+		\begin{align}
+			\label{eq:integer-gcd-ab-1}
+			\begin{split}
+			m = ac, 
+			\\
+			m = bd, 
+			\end{split}
+			\\
+			ax+by = 1
+			\label{eq:integer-gcd-ab}
+		\end{align}
+		Multiplying both sides of 
+			\eqref{eq:integer-gcd-ab}
+			by $m$
+		\begin{align}
+			max+mby &= m
+			\\
+			\implies ab\brak{dx+cy} &=m
+		\end{align}
+		upon substituting from 
+			\eqref{eq:integer-gcd-ab-1}.  Hence, $\brak{ab}\mid m$.
+		\item Factor the following into primes
+\begin{enumerate}
+	\item 36
+	\item 120
+	\item 720
+	\item 5040
+\end{enumerate}
+\solution 
+\begin{enumerate}
+\item $36 = 2^2\times 3^2$.
+\item $120 = 2^3\times 3 \times 5$.
+\item $720 = 2^4\times 3^2 \times 5$.
+\item $5040 = 2^2\times 3^2 \times 5 \times 7$.
+\end{enumerate}
+\item If $m = p_{1}^{a_1} \dots p_{k}^{a_k}$, and 
+$n = p_{1}^{b_1} \dots p_{k}^{b_k}$, where $p_i$ are distinct primes and $a_i, b_i$ are nonnegative, express
+$\brak{m,n}$ as $ p_{1}^{c_1} \dots p_{k}^{c_k}$ by describing the $c$s in terms of the $a$s and $b$s.
+\\
+\solution Let 
+\begin{align}
+	m &= 36 = 2^2\times 3^2
+\\
+	n&=720 = 2^4\times 3^2 \times 5
+\end{align}
+Then, 
+\begin{align}
+	k &= 3
+	\\
+	p_1 &= 2, p_2 = 3, p_3 = 5
+	\\
+	a_1 &= 2, a_2 = 2, a_3 =0 
+	\\
+	b_1 &= 4, b_2 = 2, b_3 = 1
+\end{align}
+and 
+\begin{align}
+	\brak{36,720} &= 2^2\times 3^2
+	\\
+	\implies c_i &= \min\brak{a_i, b_i}
+\end{align}
+\item Define the least common multiplie (LCM) of positive integers $m$ and $n$ to be the smallest positive integer 
+$v$ such that both $m \mid v$ and $n \mid v$.
+Show that
+\begin{enumerate}
+\end{enumerate}
+\end{enumerate}
