@@ -217,6 +217,7 @@
 \item If $m = p_{1}^{a_1} \dots p_{k}^{a_k}$, and 
 $n = p_{1}^{b_1} \dots p_{k}^{b_k}$, where $p_i$ are distinct primes and $a_i, b_i$ are nonnegative, express
 $\brak{m,n}$ as $ p_{1}^{c_1} \dots p_{k}^{c_k}$ by describing the $c$s in terms of the $a$s and $b$s.
+\label{prob:integer-gcd-primefac}
 \\
 \solution Let 
 \begin{align}
@@ -242,7 +243,30 @@ and
 \end{align}
 \item Define the least common multiplie (LCM) of positive integers $m$ and $n$ to be the smallest positive integer 
 $v$ such that both $m \mid v$ and $n \mid v$.
-Show that
 \begin{enumerate}
+	\item 
+Show that
+		\begin{align}
+			v = \frac{mn}{\brak{m,n}}
+		\end{align}
+	\item In terms of the factorization of $m$ and $n$ given in problem 
+\ref{prob:integer-gcd-primefac}
+what is $v$?
 \end{enumerate}
+\item  Find the least common multiples of the following pairs
+\begin{enumerate}
+	\item $\brak{116,-84}$
+	\item $\brak{85,65}$
+	\item $\brak{72,26}$
+	\item $\brak{72, 25}$
+\end{enumerate}
+\solution 
+\begin{enumerate}
+	\item 2436.
+	\item 1105.
+	\item 936.
+	\item 1800.
+\end{enumerate}
+\item If $m,n > 0$ are two integers, show that we can find integers $u, v$ with $-\frac{n}{2} \le v \le  \frac{n}{2}$ such that $m = un+v$.
+\item To check that a given integer $n > 1$ is a prime, prove that it is enough to show that $n$ is not divisible by any prime $p$ with $p \le \sqrt{n}$.
 \end{enumerate}
