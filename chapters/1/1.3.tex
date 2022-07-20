@@ -4,8 +4,60 @@
 		\numberwithin{equation}{enumi}
 
 	\item For the given sets $S, T$ determine if a mapping $f:S\to T$ is clearly and unambiguously defined; if not, say why not.
+		\label{prob:1.3.1}
 \begin{enumerate}
 	\item $S =$ set of all women, $T = $ set of all men, $f(s) = $ husband of s.
 	\item $S = $ set of all positive integers, $T = S, f(s) = s-1$.
+	\item $S$ = set of positive integers, $T$ = set of nonnegative integers, $f(s) = s -1$.
+	\item $S$ = set of nonnegative integers, $T = S, f(s) = s - 1$.
+	\item $S$ = set of all integers, $T = S, f(s) = s - 1$.
+	\item  $S$ =set of all real numbers, $T = S, f(s) = \sqrt{s}$.
+	\item	$S$ = set of all positive real numbers, $T = S, f(s) = \sqrt{s}$.	
 \end{enumerate}
+\solution
+\begin{enumerate}
+	\item Not all women have husbands.  So the mapping is not clearly defined.
+	\item For every integer $s, s-1$ is an integer.  So the mapping is defined.
+	\item $0 \notin S$, so the mapping is defined.
+	\item $f(0) = -1 \notin S$.  So the mapping is not defined.
+	\item $f(-1) \notin S$, so the mapping is not defined.
+	\item $f(s) \in S \forall S$.  So the mapping is defined.
+\end{enumerate}
+\item 
+	In those parts of Problem  
+		\ref{prob:1.3.1}
+where $f$ does define a function, determine if it is 1-1, onto, or both.
+\solution
+\begin{enumerate}
+	\item For $f(s) = s-1, s \in \mathbb{Z}$, the mapping is a bijection.
+	\item For $s \in \mathbb{N}, f(s) = s-1 \in  \mathbb{W}$, the mapping is a bijection.
+	\item For $s \in S, f(s) \in S$ and vice-versa.  So the mapping is a bijection.
+\end{enumerate}
+\item If $f$ is a 1-1 mapping of $S$ onto $T$, prove that $f^{- 1}$ is a 1-1 mapping of $T$ onto $S$.
+	\\
+		\solution  By definition,  
+		\begin{align}
+			\label{eq:1.3.one-one}
+			\begin{split}
+	s_1 = s_2 \in S	\implies	f(s_1) = f(s_2) \in T
+	\\
+			t_1 = t_2 \in T \implies \exists s_1 = s_2 \in S \ni f(s_1) = f(s_2).
+			\end{split}
+		\end{align}
+Let $g = f^{-1}$. Then, 
+		\begin{align}
+			f(s_i) = t_i \implies g(t_i) = s_i.
+		\end{align}
+		From 
+			\eqref{eq:1.3.one-one}, 
+		\begin{align}
+			\label{eq:1.3.one-one-inv}
+			\begin{split}
+				g(t_1) = g(t_2) \in S	\implies	 t_1= t_2 \in T
+	\\
+			t_1 = t_2 \in T \implies \exists g(t_1) = g(t_2) \in S 
+			\end{split}
+		\end{align}
+			\eqref{eq:1.3.one-one-inv} shows that $g = f^{-1}$ is also 1-1.
+		
 \end{enumerate}

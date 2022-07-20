@@ -5,4 +5,4 @@
 \contentsline {subsection}{\numberline {1.4}$A(S)$ (The set of 1-1 mappings of S onto itself)}{5}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}The Integers}{5}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Mathematical Induction}{7}{subsection.1.6}%
-\contentsline {subsection}{\numberline {1.7}Complex Numbers}{8}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.7}Complex Numbers}{9}{subsection.1.7}%
