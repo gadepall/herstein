@@ -59,5 +59,169 @@ Let $g = f^{-1}$. Then,
 			\end{split}
 		\end{align}
 			\eqref{eq:1.3.one-one-inv} shows that $g = f^{-1}$ is also 1-1.
-		
+		\item 
+			If $f$ is a 1-1 mapping of $S$ onto $T$, prove that $f^{- 1}\circ f = i_S$.
+			\\
+			\solution For $s \in S, t \in T$,
+			\begin{align}
+				f(s) = t \implies g(t) = s
+				\\
+				\text{or, }g\circ f(s) = s \implies \brak{g\circ f} = i_S \qed
+			\end{align}
+		\item If $g: S \rightarrow T$ and $f: T\rightarrow  U$ are both onto, then $f\circ g: S \rightarrow   U$ is
+also onto.
+\\
+
+\solution  From the given information, 
+\begin{align}
+	g(S) = T, f(T) = U
+	\\
+	\implies \brak{f\circ g} (S) = U \qed
+\end{align}
+\item  If $f: S   \rightarrow T$ is onto and $g : T \rightarrow U$ and $h : T  \rightarrow U$ are such that $g\circ f = h \circ f$,  prove that $g = h$.
+	\\
+	\solution From the given information, 
+	\begin{align}
+		g\circ f - h \circ f &= 0 
+		\\
+		\implies \brak{g-h}\circ f &=0
+		\\
+		\text{or, } g = h
+	\end{align}
+\item If $g: S  \rightarrow T, h : S  \rightarrow T$, and if $f: T  \rightarrow U$ is 1-1, show that if $f  \circ  g = f   \circ  h$, then $g = h$.
+\item Let $S$ be the set of all integers and $T = \cbrak{1, -1}; f: S  \rightarrow T$ is defined by 
+	\begin{align}
+		f(s)=
+	\begin{cases}
+ 1 & s \text{ even}
+		\\
+		-1 & s \text{ odd } .
+	\end{cases}
+	\end{align}
+\begin{enumerate}
+\item Does this define a function from $S$ to $T$? 
+\item  Show that 
+	\begin{align}
+	f(s_1 + s_2) = f(s_1)f(s_2)
+	\end{align}
+What does this say about the integers?
+\item  Is $f(s_1s_2) = f(s_1)f(s_2)$ also true?
+\end{enumerate}
+\solution
+\begin{enumerate}
+	\item Yes, $f$ is a function.
+	\item  See Table 
+			\ref{table:1.3.8}.
+		\begin{table}[!h]
+			\centering
+			\input{tables/1.3.8.tex}
+			\caption{}
+			\label{table:1.3.8}
+		\end{table}
+	\item No. If $s_1,s_2$ are odd, 
+	\begin{align}
+		s_1s_2 & \text{ odd}
+		\\
+		f(s_1s_2) &= -1 \ne f(s_1)f(s_2)
+	\end{align}
+\end{enumerate}
+\item Let $S$ be the set of all real numbers.  Define 
+	\begin{align}
+		f&:S \rightarrow S | f(s) = s^2,
+		\\
+		g&:S \rightarrow S | g(s) = s+1,
+	\end{align}
+\begin{enumerate}
+	\item Find $f \circ g$.
+	\item Find $g \circ f$.
+	\item Is $f \circ g=g \circ f$?
+\end{enumerate}
+\solution 
+\begin{enumerate}
+	\item 
+	\begin{align}
+		\label{eq:1.3.9-1}
+		\brak{f \circ g}(s) = \brak{s+1}^2
+	\end{align}
+	\item 
+	\begin{align}
+		\label{eq:1.3.9-2}
+		\brak{g \circ f}(s) = s^2+1
+	\end{align}
+	\item From 
+		\eqref{eq:1.3.9-2}
+		and
+		\eqref{eq:1.3.9-2}
+$f \circ g \ne g \circ f$.
+\end{enumerate}
+\item Let $S$ be the set of all real numbers and for $a, b \in S$, where $a \ne 0$; define $f_{a,b}(s) = as + b$.
+\begin{enumerate}
+	\item  Show that $f_{a,b} \circ f_{c,d} = f_{u,v}$ for some real $u, v$. Give explicit values for $u, v$ in terms of $a, b, c$ and $d$.
+	\item  Is $f_{a,b} \circ f_{c,d} = f_{c,d} \circ f_{a,b}$ always?
+	\item  Find all $f_{a,b}$ such that $f_{a,b} \circ f_{1,1} = f_{1,1} \circ f_{a,b}$.
+	\item  Show that $f^{-1}$ exists and find its form.
+\end{enumerate}
+\solution 
+\begin{enumerate}
+	\item  
+		\begin{align}
+			\label{eq:1.3.10-1}
+			f_{a,b} \circ f_{c,d} &= c\brak{as+b}+d
+			\\
+			&=cas+cb+d 
+			\\
+			&= us+v
+			\\
+			\implies u = ca, v = bc + d
+		\end{align}
+	\item  From
+			\eqref{eq:1.3.10-1},
+		\begin{align}
+			\label{eq:1.3.10-2}
+			f_{c,d}\circ f_{a,b} 
+			&=cas+ad+ b
+		\end{align}
+		Thus, from 
+			\eqref{eq:1.3.10-1}
+			and 
+			\eqref{eq:1.3.10-2}
+		\begin{align}
+			f_{a,b} \circ f_{c,d} &= f_{c,d} \circ f_{a,b} 
+			\\
+			\implies bc+d = ad+b
+			\label{eq:1.3.10-3}
+		\end{align}
+	\item  From 
+			\eqref{eq:1.3.10-3},
+		\begin{align}
+			f_{a,b} \circ f_{1,1} &= f_{1,1} \circ f_{a,b}
+			\\
+			\implies as+b+1 &= as+a+b
+			\\
+			\text{or, } a = 1.
+		\end{align}
+		Thus, 
+		\begin{align}
+			f_{a,b}  = s+b
+		\end{align}
+	\item  From the definition,
+		\begin{align}
+			f_{a,b}(s)  &= as+b
+			\\
+			\implies s &=\frac{f_{a,b}(s) -b}{a}
+			\\
+			\text{or, }f^{-1}_{a,b}(s) &= \frac{s-b}{a}
+		\end{align}
+\end{enumerate}
+\item Let $S$ be the set of all positive integers. Define $f: S  \rightarrow S$ by $f(l) = 2, f(2) = 3, f(3) = 1$ and $f(s) = s$ for any other $s \in S$. Show that $f o f o f = i_S$. What is $f^{-1}$ in this case?
+	\\
+	\solution For
+$s \in \cbrak{1,2,3}$, it is obvious.  For
+	$s \notin \cbrak{1,2,3}$,
+		\begin{align}
+			\brak{f\circ f} (s) &= f(s) = s
+			\\
+			\implies \brak{f\circ f\circ f} (s) &=  s \qed
+		\end{align}
+
 \end{enumerate}
