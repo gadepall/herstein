@@ -55,9 +55,10 @@
 			f^{-1}g^n  f
 		\end{align}
 	\item If $f, g \in A (S)$ and $fg = gf$, show that:
+		\label{prob:1.4.5}
 \begin{enumerate}
 	\item  $(fg)^2 = f^2g^2$.
-	\item  $(fg)^{-1} = f^{-1g^{-1}}$.
+	\item  $(fg)^{-1} = f^{-1}g^{-1}$.
 \end{enumerate}
 \solution From the given information, 
 \begin{enumerate}
@@ -65,8 +66,62 @@
 		\begin{align}
 			(fg)^2 &= \brak{fg}\brak{fg}
 			\\
-			 &= \brak{fg}\brak{gh} = fg^2h
+			 &= \brak{fg}\brak{gf} = fg^2f
+			\\
+			 &=  f\brak{fg^2} = f^2g^2
+		\end{align}
+	\item  Since 
 		\begin{align}
-	\item  $(fg)^{-1} = f^{-1g^{-1}}$.
+			\brak{fg}^{-1}f g&= i,
+			\\
+			\brak{fg}^{-1}fgg^{-1} &= g^{-1}
+			\\
+	\implies 	
+			\brak{fg}^{-1}f &= g^{-1}
+			\\
+			\implies \brak{fg}^{-1} ff^{-1}&= g^{-1}f^{-1}
+			\\
+			\text{or, }\brak{fg}^{-1} &= g^{-1}f^{-1}
+		\end{align}
+
 \end{enumerate}
+\item Push the result of Problem 
+		\ref{prob:1.4.5}
+, for the same $f$ and $g$, to show that 
+		\begin{align}
+			\label{eq:1.4.5}
+			\brak{fg}^m = f^mg^m 
+		\end{align}
+for all integers $m$.
+\\
+		\solution Using induction, 
+		\begin{align}
+			\brak{fg}^{m+1} &= 
+			\brak{fg}^{m}(fg) 
+			\\
+			&= f^mg^m fg = 
+f^mg^m gf 
+			\\
+			&= 
+ff^mg^m g 
+		\end{align}
+		yielding
+			\eqref{eq:1.4.5}.
+		\item
+		\item If $f, g \in A (S)$ and $(fg)^2 = f^2g^2$, prove that $fg = gf$.
+			\\
+			\solution 
+		\begin{align}
+			(fg)^2 &= f^2g^2
+			\\
+			\implies fgfg &= ffgg
+			\\
+			\implies f^{-1}fgfg &= f^{-1}ffgg
+			\\
+			\implies gfg &= fgg
+			\\
+			\implies gf gg^{-1}&= fggg^{-1}
+		\end{align}
+		yielding the desired result.
+
 \end{enumerate}
