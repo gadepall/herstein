@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.8)  21 JUL 2022 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.8)  22 JUL 2022 10:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -731,45 +731,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--74
 \gnumericColB=\skip75
 \gnumericColC=\skip76
 \gnumericColD=\skip77
-) [5]) (./chapters/1/1.5.tex [6] [7]) (./chapters/1/1.6.tex
-[8]
+) [5]) (./chapters/1/1.4.tex [6]) (./chapters/1/1.5.tex
+[7] [8]) (./chapters/1/1.6.tex [9]
 Overfull \hbox (58.35123pt too wide) in paragraph at lines 157--157
 [] 
  []
 
-) (./chapters/1/1.7.tex [9] [10] [11]
+) (./chapters/1/1.7.tex [10] [11] [12]
 Overfull \hbox (2.46571pt too wide) in paragraph at lines 359--359
 [] 
  []
 
-[12]
+[13]
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 465.
 
-[13]) [14
-
-] (./main.aux) ) 
+) [14] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7910 strings out of 478238
- 121294 string characters out of 5850457
- 644866 words of memory out of 5000000
- 25977 multiletter control sequences out of 15000+600000
+ 7916 strings out of 478238
+ 121401 string characters out of 5850457
+ 646866 words of memory out of 5000000
+ 25980 multiletter control sequences out of 15000+600000
  539008 words of font info for 172 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,18n,71p,496b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/
-texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/r
-txsc.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share
-/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/
-txsyb.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/sha
-re/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/typ
-e1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on main.pdf (14 pages, 125060 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/s
+hare/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fon
+ts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfo
+nts/rtxsc.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/
+share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fon
+ts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/txf
+onts/txsyb.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></us
+r/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/font
+s/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on main.pdf (14 pages, 127317 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream

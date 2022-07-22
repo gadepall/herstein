@@ -213,7 +213,7 @@ $f \circ g \ne g \circ f$.
 			\text{or, }f^{-1}_{a,b}(s) &= \frac{s-b}{a}
 		\end{align}
 \end{enumerate}
-\item Let $S$ be the set of all positive integers. Define $f: S  \rightarrow S$ by $f(l) = 2, f(2) = 3, f(3) = 1$ and $f(s) = s$ for any other $s \in S$. Show that $f o f o f = i_S$. What is $f^{-1}$ in this case?
+\item Let $S$ be the set of all positive integers. Define $f: S  \rightarrow S$ by $f(1) = 2, f(2) = 3, f(3) = 1$ and $f(s) = s$ for any other $s \in S$. Show that $f o f o f = i_S$. What is $f^{-1}$ in this case?
 	\\
 	\solution For
 $s \in \cbrak{1,2,3}$, it is obvious.  For
@@ -223,5 +223,14 @@ $s \in \cbrak{1,2,3}$, it is obvious.  For
 			\\
 			\implies \brak{f\circ f\circ f} (s) &=  s \qed
 		\end{align}
-
+		It is easy to verify that 
+		\begin{align}
+			f^{-1}(s) = f(s)= s & s \notin \brak{1,2,3}
+		\end{align}
+		Also,
+		\begin{align}
+			f^{-1}(2) = f(1),
+			f^{-1}(3) = f(2),
+			f^{-1}(1) = f(3),
+		\end{align}
 \end{enumerate}

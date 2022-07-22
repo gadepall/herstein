@@ -1,0 +1,72 @@
+\renewcommand{\theequation}{\theenumi}
+
+\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+		\numberwithin{equation}{enumi}
+
+	\item If $s1 \ne s_2$ are in $S$, show that there is an $f \in A(S)$ such that $f(s_1) = s_2$.
+		\\
+		\solution By definition of a 1-1 mapping, it is obvious.
+	\item If $s_1 \in S$, let $H = \cbrak{f \in A(S) \mid f(s_1) = s_1}$. Show that: 
+		\label{prob:1.4.2}
+		\begin{enumerate}
+		\item  $i \in H$. 
+		\item  If $f, g \in H$, then $fg \in H$. 
+		\item  If $f \in H$, then $f^{-1} \in H$.
+		\end{enumerate}
+		\solution 
+		\begin{enumerate}
+			\item $\because i(s_1) = s_1, i \in H$.
+			\item $fg(s_1)= f(s_1) = s_1.$
+			\item $f(s_1) = s_1 \implies f^{-1}(s_1) = s_1 \implies f^{-1} \in H$.
+		\end{enumerate}
+	\item Suppose that $s_1 \ne s_2$ are in $S$ and $f(s_1) = s_2$, where $f \in A (S)$. Then if $H$ is as in Problem
+		\ref{prob:1.4.2}
+		 and $K = \cbrak{g \in A (S) \mid g(s_2) = s_2}$, show that:
+\begin{enumerate}
+	\item  If $g \in K$, then $f^{-1}gf \in H$. 
+	\item  If $h \in H$, then there is some $g \in K$ such that $h = f^{-1}gf$.
+\end{enumerate}
+\solution
+\begin{enumerate}
+	\item  From the given information,
+		\begin{align}
+			f^{-1}gf(s_1) =  
+			f^{-1}g(s_2) =   
+			f^{-1}(s_2) =  s_1 
+		\end{align}
+		Hence, 
+		\begin{align}
+			f^{-1}gf  \in H 
+		\end{align}
+	\item  The $h$ was found in the previous part.
+\end{enumerate}
+\item If $f, g, h \in A(S)$, show that $(f^{-1}gf)(f^{-1}hf) = f^{-1}(gh)f$. What can you say about $(f^{-1}gf)^n$?
+\solution  From the given information, 
+		\begin{align}
+			(f^{-1}gf)(f^{-1}hf) &= 
+			f^{-1}g\brak{ff^{-1}}hf 
+\\
+			&			= 
+			f^{-1}\brak{gh}f  
+		\end{align}
+		Similarly,
+		\begin{align}
+			\brak{f^{-1}gf}^n = 
+			f^{-1}g^n  f
+		\end{align}
+	\item If $f, g \in A (S)$ and $fg = gf$, show that:
+\begin{enumerate}
+	\item  $(fg)^2 = f^2g^2$.
+	\item  $(fg)^{-1} = f^{-1g^{-1}}$.
+\end{enumerate}
+\solution From the given information, 
+\begin{enumerate}
+	\item  
+		\begin{align}
+			(fg)^2 &= \brak{fg}\brak{fg}
+			\\
+			 &= \brak{fg}\brak{gh} = fg^2h
+		\begin{align}
+	\item  $(fg)^{-1} = f^{-1g^{-1}}$.
+\end{enumerate}
+\end{enumerate}
