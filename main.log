@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.8)  25 JUL 2022 15:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.8)  25 JUL 2022 19:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -113,9 +113,33 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
+(/home/user/texmf/tex/latex/tmeslatex/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/home/user/texmf/tex/latex/tmeslatex/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 123.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+(/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks18
+\thm@bodyfont=\toks19
+\thm@headfont=\toks20
+\thm@notefont=\toks21
+\thm@headpunct=\toks22
+\thm@preskip=\skip50
+\thm@postskip=\skip51
+\thm@headsep=\skip52
+\dth@everypar=\toks23
+)
 (/home/user/texmf/tex/latex/tmeslatex/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip50
+\@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -123,7 +147,7 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
+\@emptytoks=\toks24
 \ex@=\dimen162
 ))
 (/home/user/texmf/tex/latex/tmeslatex/amsbsy.sty
@@ -188,47 +212,24 @@ Package amsmath Warning: Unable to redefine math accent \mathring.
 \dotsspace@=\muskip16
 \c@parentequation=\count273
 \dspbrk@lvl=\count274
-\tag@help=\toks18
+\tag@help=\toks25
 \row@=\count275
 \column@=\count276
 \maxfields@=\count277
-\andhelp@=\toks19
+\andhelp@=\toks26
 \eqnshift@=\dimen165
 \alignsep@=\dimen166
 \tagshift@=\dimen167
 \tagwidth@=\dimen168
 \totwidth@=\dimen169
 \lineht@=\dimen170
-\@envbody=\toks20
-\multlinegap=\skip51
-\multlinetaggap=\skip52
-\mathdisplay@stack=\toks21
+\@envbody=\toks27
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
-) (/home/user/texmf/tex/latex/tmeslatex/amssymb.sty
-Package: amssymb 2002/01/22 v2.2d
-
-(/home/user/texmf/tex/latex/tmeslatex/amsfonts.sty
-Package: amsfonts 2001/10/25 v2.2f
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 123.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
-))
-(/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks22
-\thm@bodyfont=\toks23
-\thm@headfont=\toks24
-\thm@notefont=\toks25
-\thm@headpunct=\toks26
-\thm@preskip=\skip53
-\thm@postskip=\skip54
-\thm@headsep=\skip55
-\dth@everypar=\toks27
-)
-(/usr/share/texmf-dist/tex/latex/algorithms/algorithmic.sty
+) (/usr/share/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 
 (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
@@ -236,7 +237,7 @@ Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks28
+\KV@toks@=\toks29
 )
 \c@ALC@unique=\count278
 \c@ALC@line=\count279
@@ -376,7 +377,7 @@ LaTeX Info: Redefining \openbox on input line 1064.
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count282
 \lst@gtempboxa=\box54
-\lst@token=\toks29
+\lst@token=\toks30
 \lst@length=\count283
 \lst@currlwidth=\dimen173
 \lst@column=\count284
@@ -402,7 +403,7 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip58
 \enit@outerparindent=\dimen177
-\enit@toks=\toks30
+\enit@toks=\toks31
 \enit@inbox=\box56
 \enit@count@id=\count290
 \enitdp@description=\count291
@@ -583,7 +584,7 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen192
 \ar@mcellbox=\box58
 \extrarowheight=\dimen193
-\NC@list=\toks31
+\NC@list=\toks32
 \extratabsurround=\skip64
 \backup@length=\skip65
 \ar@cellbox=\box59
@@ -605,7 +606,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LT@rows=\count308
 \c@LT@tables=\count309
 \c@LT@chunks=\count310
-\LT@p@ftn=\toks32
+\LT@p@ftn=\toks33
 )
 (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
@@ -747,12 +748,12 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 \scratchbox=\box66
 \nofMPsegments=\count314
 \nofMParguments=\count315
-\everyMPshowfont=\toks33
+\everyMPshowfont=\toks34
 \MPscratchCnt=\count316
 \MPscratchDim=\dimen197
 \MPnumerator=\count317
 \makeMPintoPDFobject=\count318
-\everyMPtoPDFconversion=\toks34
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -905,15 +906,17 @@ Overfull \hbox (7.51881pt too wide) in paragraph at lines 37--37
 [] 
  []
 
-) [15] (./main.aux)
+[15]) [16
+
+] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DED3731754566C1D129C085415BFFD65;1613.
  ) 
 Here is how much of TeX's memory you used:
- 15302 strings out of 478238
- 233887 string characters out of 5850457
- 747842 words of memory out of 5000000
- 32603 multiletter control sequences out of 15000+600000
+ 15313 strings out of 478238
+ 234031 string characters out of 5850457
+ 747738 words of memory out of 5000000
+ 32601 multiletter control sequences out of 15000+600000
  540324 words of font info for 174 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,18n,71p,496b,626s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -926,10 +929,10 @@ onts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></us
 r/share/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (15 pages, 152804 bytes).
+Output written on main.pdf (16 pages, 154868 bytes).
 PDF statistics:
- 986 PDF objects out of 1000 (max. 8388607)
- 937 compressed objects within 10 object streams
- 651 named destinations out of 1000 (max. 500000)
+ 1009 PDF objects out of 1200 (max. 8388607)
+ 959 compressed objects within 10 object streams
+ 664 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
