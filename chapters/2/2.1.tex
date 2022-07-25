@@ -3,7 +3,7 @@
 \begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
 		\numberwithin{equation}{enumi}
 	\item Determine if the following sets G with the operation indicated form a group. If not, point out which of the group axioms fail. 
-
+\begin{enumerate}
 	\item  $G$ = set of all integers, $a * b = a-b$. 
 	\item  $G$ = set of all integers, $a * b = a + b + ab $
 	\item  $G$ = set of nonnegative integers, $a * b = a + b$. 
@@ -11,6 +11,111 @@
 	\item  $G$ = set of all rational numbers with denominator divisible by 5 (written so that numerator and denominator are relatively prime), $a * b = a + b$.
 	\item  $G$ a set having more than one element, $a * b = a \forall a, b \in G$.
 
+\end{enumerate}
+\solution The properties of a group are 
 \begin{enumerate}
+	\item $a,b \in G \implies a*b \in G$.
+	\item $a,b,c \in G \implies a*(b*c) = (a*b)*c \in G$.
+		\label{prop:group-def}
+	\item $\exists \, e \in G \ni a*i = i*a = a \, \forall \, a \in G$.
+		\label{prop:group-def-i}
+	\item $a \in G \implies \exists \, b \in G \ni a*b = b*a = i$.
+		\label{prop:group-def-inv}
+\end{enumerate}
+\begin{enumerate}
+	\item From
+		\ref{prop:group-def},
+		\begin{align}
+			a*(b*c) &= a-(b-c) = a-b+c
+			\\
+			(a*b)*c &= (a-b)-c = a-b-c
+			\\
+			\implies 
+			a*(b*c) 
+			\ne			
+			(a*b)*c
+		\end{align}
+		Thus, $G$ is not a group.
+	\item 
+		\label{prop:2.1.1b}
+		\begin{enumerate}
+	\item 
+		From property
+		\ref{prop:group-def},
+		\begin{align}
+			a*(b*c) &= a*(b+c+bc) 
+			\\
+			&= a+b+c+bc+a(b+c+bc)
+			\\
+			&= a+b+c + ab+bc+ca +abc
+			\\
+			(a*b)*c &= \brak{a+b+ab}+c+c\brak{a+b+ab}
+			\\
+			&= a+b+c+ab+bc+ca+abc
+		\end{align}
+		Thus, property 
+		\ref{prop:group-def}
+		is satisfied.
+	\item Since
+		\begin{align}
+			a*i &= a+i+ai
+			\\
+			i*a &= a+i+ai
+		\end{align}
+		property
+		\ref{prop:group-def-i} is satisfied.
+	\item 
+		\begin{align}
+			a*i &= a+i+ai
+			\\
+			i*a &= a+i+ai
+		\end{align}
+		Thus, for 
+		property
+		\ref{prop:group-def-i} to be satisfied,
+		\begin{align}
+			i*a &= a
+			\\
+			\implies a+i+ai = a
+			\\
+			\text{or, }
+			i\brak{1+a} &= 0
+			\\
+			\implies i = 0
+		\end{align}
+
+	\item   If
+		\begin{align}
+			a*b &= b*a  = i, 
+			\\
+			a+b+ab &= 0
+			\\
+			\implies b = -\frac{a}{1+a}
+		\end{align}
+		which  is not finite for $a = -1$.  Also, $b \notin G$ for $a = 1$.  Thus, property 
+		\ref{prop:group-def-inv} is violated and $G$ is not a group.
+
+\end{enumerate}
+	\item In this case, for 
+		property
+		\ref{prop:group-def-i} to be satisfied,
+		\begin{align}
+			a*i &= i*a = a, 
+			\\
+			\implies 
+			a+i &=a 
+			\\
+			\text{or, } i = 0
+		\end{align}
+From property
+		\ref{prop:group-def-i},
+		\begin{align}
+a+b = 0 \implies b = -a
+		\end{align}
+		Thus, $G$ is a group.
+	\item From problem 
+		\ref{prop:2.1.1b}, it is easy to verify that $G$ is a group, since we are now considering rational numbers.
+	\item 
+
 \end{enumerate}
 \end{enumerate}
