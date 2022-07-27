@@ -136,4 +136,118 @@ From property
 			T_{a,b} \mid T_{a,b}(r) = ar+b, \quad a \ne 0,b,r \in \mathbb{R}, 
 		\end{align}
 	show that the set $H = {T_{a,b}\mid a = \pm 1, b \in \mathbb{R}}$ forms a group under the $*$ of $G$.
+	\\
+	\solution 
+\begin{enumerate}
+	\item 
+		\begin{align}
+			\brak{T_{a,b}
+*
+			T_{a,c}}(r) &= a\brak{ar+c}+b
+			\\
+			&=a^2r + ac+b = r+ac+b
+			\\
+			&=T_{1,ac+b} \in G
+			\label{eq:2.1.2-bc}
+		\end{align}
+		Similarly, 
+		\begin{align}
+			\brak{T_{a,c}
+*
+			T_{a,b}}(r) 
+			&=r+ab+c
+		\end{align}
+	\item 	If 
+		\begin{align}
+			\brak{T_{a,b}
+*
+			T_{a,c}}(r) &= T_{a,b}, 
+			\\
+			r+ab+c &= ar+b
+			\\ 
+			\implies 
+			a &= 1, c = 0
+		\end{align}
+		Thus, 
+		\begin{align}
+			i = T_{1,0}
+		\end{align}
+	\item 	If 
+		\begin{align}
+			\brak{T_{a,b}
+*
+			T_{a,c}}(r) &= 
+			\brak{T_{a,c}
+*
+			T_{a,b}}(r) = T_{1,0},
+			\\
+		r+ab+c
+			&=
+		r+ac+b = r
+		\\
+			\implies  b &= \pm c
+		\end{align}
+	\item From 
+		\label{prob:2.1.2}
+			\eqref{eq:2.1.2-bc},
+		\begin{align}
+			T_{a,b}
+*
+			\brak{
+			T_{a,c}(r) 
+*
+			T_{a,d}}(r) 
+		&= 
+			T_{a,b}
+*
+			T_{1,ad+c}
+			\\
+			&=a\brak{r+ad+b + c}+b 
+			\\
+			&= ar + ab+ac+b+d
+		\end{align}
+		Similalrly, 
+		\begin{align}
+			\brak{
+			T_{a,b}
+*
+			T_{a,c}}(r) 
+*
+			T_{a,d}(r) 
+		&= 
+			T_{1,ac+b}
+*
+			T_{a,d}
+			\\
+			&=\brak{ar+ d}+ac+b 
+			\\
+			&= ar + ab+ac+b+d
+		\end{align}
+		which satisfies the associativity property.
+\end{enumerate}
+		Thus, $T^{-1}_{a,b} = T_{a,\pm b}$.
+		and $G$ is a group.
+	\item Let $H \subset G$, for $G$ in problem 
+		\ref{prob:2.1.2} and $H = \cbrak{{T_{a,b} \in G \mid a \text{ is rational}, b \text{ any real}}}$.  Show that $H$ is also a group.
+	\item Let $K \subset G$, for $G$ in problem 
+		\ref{prob:2.1.2} and $K = \cbrak{T_{1,b} \in G \mid  b \in \mathbb{R}}$.  Show that $K$ is an Abelian group.
+		\\
+		\solution  From \eqref{eq:2.1.2-bc},
+		\begin{align}
+T_{1,b}
+*
+			T_{1,c} &= 
+T_{1,b+c}  
+\\
+			&= T_{1,c+b}  
+		\end{align}
+		Thus, $K$  is an Abelian group.
+	\item In Example 9, prove that $g * f = f * g^{-1}$, and that $G$ is a group, is nonabelian, and is of order 8
+Let $S = \cbrak{(x, y) \mid x, y real} and consider $f, g \in A(S)$ defined by $f (x, y) = (-x, y)$ and $g(x, y) = (-y, x); f$ is the reflection about the $y$-axis and $g$ is the rotation through $90\degree$ in a counterclockwise direction about the origin. We then define $G = f^ig^j 
+\mid i = 0, 1; j = 0, 1, 2, 3}$, and let *
+in $G$ be the product ofelements in A(S). Clearly, f2 = g4 = identity mapping; (f* g)(x, y) = (fg)(x, y) = f(g(x, y» = f( - y, x) = (y, x)
+and (g*f)(x,y) = g(f(x,y» = g(-x,y) = (-y, -x).
+So g * f =1= f * g. We leave it to the reader to verify that g * f = f * g-l and G is a nonabelian group of order 8. This group is called the dihedral group of order 8. [Try to find a formula for (fig j
+) * (fSgt) = fagb that expresses a, b in terms of i, j, s, and t.]
+
 \end{enumerate}
