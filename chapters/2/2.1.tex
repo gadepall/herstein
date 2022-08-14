@@ -256,7 +256,7 @@ Then
 \begin{align}
 	f\brak{	\vec{x}} &= \myvec{-1 & 0 \\ 0 & 1}\vec{x} = \vec{f}\vec{x}
 	\\
-	g\brak{	\vec{x}} &= \myvec{0 & -1 \\ 1 & 0}\vec{x} = = \vec{g}\vec{x}
+	g\brak{	\vec{x}} &= \myvec{0 & -1 \\ 1 & 0}\vec{x} =  \vec{g}\vec{x}
 \end{align}
 and 
 \begin{align}
@@ -266,10 +266,14 @@ Let
 \begin{align}
 	\vec{G}_1 &= \vec{f}^i\vec{g}^j \in G
 	\\
-	\vec{G}_2 = \vec{f}^k\vec{g}^l \in G
+	\vec{G}_2 &= \vec{f}^k\vec{g}^l \in G
 \end{align}
 
 \begin{enumerate}
+	\item The identity element is 
+\begin{align}
+	\vec{i} &= 	\myvec{1 & 0\\0 & 1}
+\end{align}
 	\item It is easy to verify that 
 \begin{align}
 	\vec{f}^{-1} &= 	\myvec{-1 & 0\\0 & 1}
@@ -277,11 +281,53 @@ Let
 	\vec{g}^{-1} &= 
 	\myvec{0  & 1\\-1 & 0}
 \end{align}
-For any 
+Also, 
+\begin{align}
+	\vec{f}^{i}
+	\vec{g}^{j}g^{-j}f^{-i} =\vec{i} 
+\end{align}
+and 
+\begin{align}
+	\vec{g}^{-j}\vec{f}^{-i}	\vec{f}^{i}
+	\vec{g}^{j} =\vec{i} 
+\end{align}
+which implies that all elements in $G$ have an inverse.
 	\item The product
 \begin{align}
 	\vec{G}_1 	\vec{G}_2&= \vec{f}^i\vec{g}^j 
   \vec{f}^k\vec{g}^l \in G
 \end{align}
+For $j > k$,
+\begin{align}
+	\vec{f}^i\vec{g}^{j-k} \vec{g}^{k}
+  \vec{f}^k\vec{g}^l  = 
+	\vec{f}^i\vec{g}^{j-k} \vec{f}^{k}
+	\vec{g}^{l-k}
+\end{align}
+if $l > k$.
 \end{enumerate}
+\item 
+\item 
+\item If $G$ is an Abelian group, prove that $\brak{a*b}^n = a^n * b^n$ for all integers n.
+	\\
+	\solution For $n = 1$, the above result is valid.  For $n = 2$, 
+\begin{align}
+	\brak{a*b}^2 = a*b*a*b = a*a*b*b = a^2*b^2
+\end{align}
+Let $P(n)$ be true.  Then, $P(n+1)$ can be expressed as 
+\begin{align}
+	\brak{a*b}^{n+1} &= \brak{a*b}^{n}*a*b 
+	\\
+	&= a^n*b^n*a*b = a^n*a*b^n*b 
+	\\
+	&= a^{n+1}b^{n+1}
+\end{align}
+\item If $G$ is a group in which $a^2 = e$ for all $a \in G$, show that $G$ is abelian.
+	\\
+	\solution 
+\begin{align}
+	\because e \in G, e^2 &= e	
+	\\
+	\implies 
+\end{align}
 \end{enumerate}
