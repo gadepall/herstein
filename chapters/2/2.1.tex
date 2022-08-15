@@ -323,6 +323,7 @@ Let $P(n)$ be true.  Then, $P(n+1)$ can be expressed as
 	&= a^{n+1}b^{n+1}
 \end{align}
 \item If $G$ is a group in which $a^2 = e$ for all $a \in G$, show that $G$ is abelian.
+	\label{prob:2.1.9}
 	\\
 	\solution 
 \begin{align}
@@ -350,15 +351,50 @@ Hence, $G$ is Abelian.
 	\\
 	\solution 
 	\begin{enumerate}
-		\item Let $a,b \in G$ be a group of order 2. By definition, 
+		\item Let $a,I \in G$ be a group of order 2. Then
 			\begin{align}
-				ab = ba = I
+				a^2 = I
 			\end{align}
 			Hence, $G$ is Abelian.
-		\item Considering a group of order 3 with $a,b,c \in G$, 
-			without loss of generality,
+		\item Considering a group of order 3 with $a,b,I \in G$, 
+			If $b = a^{-1}$,
 			\begin{align}
 				ab = ba = I
 			\end{align}
+			and the group is Abelian.  Alternatively, 
+			\begin{align}
+				a = a^{-1} \implies a^2 = b^2 = I
+			\end{align}
+			and from problem  
+	\ref{prob:2.1.9}, $G$ is Abelian.
+\item Considering a group of order 4 with $a, b, c, I \in G$, if 
+			\begin{align}
+				 a^2 = b^2 = c^2 = I
+			\end{align}
+			from problem  
+	\ref{prob:2.1.9}, $G$ is Abelian. Alternatively, if, without loss of generality, only $a^2=I$, 
+			\begin{align}
+				 bc = cb = I
+			\end{align}
+			and the group is Abelian.  
 	\end{enumerate}
+These are the only two possibilities, so any group of order 4 or less is always an Abelian group.
+\item
+	If $G$ is any group and $a, b, c \in G$, show that if $a * b = a * c$, then $b = c$, and if $b * a = c * a$, then $b = c$.
+	\\
+	\solution $\because a \in G, \ni a^{-1} \in G | aa^{-1} = a^{-1}a = I$.  Using the associativity property of $G$,  
+			\begin{align}
+				a^{-1}\brak{ab}
+				&=
+				a^{-1}\brak{ac}
+				\\
+				\implies 
+				\brak{a^{-1}a}b
+				&=
+				\brak{a^{-1}a}c
+				\\
+				\implies Ib &= Ic
+			\end{align}
+			and the proof is complete.  The second property can be proved similarly.
+
 \end{enumerate}
