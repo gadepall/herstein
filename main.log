@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.11)  15 AUG 2022 03:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.14)  15 AUG 2022 08:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -891,13 +891,15 @@ Underfull \hbox (badness 3746) in paragraph at lines 370--371
 []\OT1/txr/m/n/12 Considering a group of or-der 4 with
  []
 
-) [17] (./main.aux)
+[17]) [18
+
+] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DED3731754566C1D129C085415BFFD65;1613.
  ) 
 Here is how much of TeX's memory you used:
- 15424 strings out of 478238
- 235530 string characters out of 5850456
+ 15429 strings out of 478238
+ 235587 string characters out of 5850456
  749415 words of memory out of 5000000
  32638 multiletter control sequences out of 15000+600000
  540324 words of font info for 174 fonts, out of 8000000 for 9000
@@ -912,10 +914,10 @@ onts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></us
 r/share/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (17 pages, 164215 bytes).
+Output written on main.pdf (18 pages, 164985 bytes).
 PDF statistics:
- 1107 PDF objects out of 1200 (max. 8388607)
- 1055 compressed objects within 11 object streams
- 738 named destinations out of 1000 (max. 500000)
+ 1116 PDF objects out of 1200 (max. 8388607)
+ 1063 compressed objects within 11 object streams
+ 743 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
